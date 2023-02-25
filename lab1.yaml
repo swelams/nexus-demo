@@ -1,0 +1,7 @@
+1- in brief write about importance of nexus ?
+
+2- what is different between hosted, proxy, and group repos ?
+
+3- install nexus on localhost or V.M on any cloud provider 
+
+4- create docker hosted repo and try to push any image from local to this repo 

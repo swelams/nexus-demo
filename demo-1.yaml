@@ -1,0 +1,26 @@
+sudo -i 
+yum update -y
+yum install git -y
+cd /opt
+git clone https://github.com/gouthamchilakala/sample-maven-project.git
+ls
+yum install java-1.8.0-openjdk-devel
+yum install -y wget 
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
+mvn –version
+cd /root
+mkdir .m2
+ls -a 
+cd .m2 
+nano settings.xml
+cd /opt
+ls
+cd sample-project
+ls
+nano pom.xml
+mvn compile
+mvn deploy
+
+
